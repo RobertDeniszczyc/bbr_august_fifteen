@@ -1,0 +1,224 @@
+/*
+	NOTE: If you use Google fonts, import it here. Don't include the http bit then it's safe across secure too
+	@import url(//fonts.googleapis.com/css?family=Paytone+One;
+*/
+
+/*
+Font weights set as variables because sometimes there are multiple weights,
+so an example use might also be a variable of $mid-weight: 500;
+If you've just got normal and bold, you don't need the variable.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
+$normal: normal;
+$bold: bold;
+
+$dark-grey: #333;
+$grey: #aaa;
+$ghost: #ddd;
+
+html {
+    font-size: 100%;
+    }
+
+body {
+    @include font-size(1,1.5);
+	}
+
+h1, h2, h3, h4, h5, h6 {
+    @include font-size(1.5, 1.75);
+    font-family: 'Abel', sans-serif;
+    font-weight: normal;
+}
+
+.huge {
+    @include font-size(10, 10);
+    font-weight: 400;
+}
+
+h1, .alpha{
+    @include font-size(6.5, 7.75);
+}
+h2, .beta {
+    @include font-size(5.5, 6.75);
+}
+h3, .charlie {
+    @include font-size(3, 3.75);
+}
+h4, .delta {
+    @include font-size(2, 3);
+}
+h5, .echo {
+    @include font-size(1.75, 2.75);
+}
+h6, .foxtrot {
+    @include font-size(1.5, 2.5);
+}
+
+p, nav a, li {
+    font-family: 'Gentium Book Basic', serif;
+    @include font-size(1.4, 2.4);
+    margin: 15px 0px;
+    color: $dark-grey;
+}
+
+.navbar-brand {
+    @include font-size(1.4, 1.4);
+}
+
+footer p {
+    @include font-size(1,1.8);
+    color: $ghost;
+}
+
+.primary-content_the-content p {
+    margin: 30px 0px;
+}
+
+.primary-content {
+    header {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+li {
+    margin: 2px 0px;
+}
+
+a {
+    @include hover-fade;
+    color: $dark-grey;
+    text-decoration: underline;
+
+&:hover, &:active {
+        outline: 0;
+    }
+}
+
+a:hover {
+    color: $grey;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+.nav a, .navbar-brand {
+    text-decoration: none;
+}
+
+.nav>li>a:hover {
+    background: none;
+}
+
+strong, b {
+	font-weight: $bold;
+	}
+
+.small {
+	@include font-size(.75, 1.25);
+	}
+
+pre, code {
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+	}
+
+blockquote {
+    background: #eee;
+    margin: 30px 10px 30px 40px;
+    p {
+        margin: 0;
+    }
+    cite {
+
+        }
+}
+
+@media (max-width: 1600px) {
+    h1, .huge {
+        @include font-size(6, 7);
+    }
+}
+
+@media (max-width: 860px) {
+    h1, .huge, .alpha {
+        @include font-size(5.5, 5.5);
+    }
+    h2, .beta {
+        @include font-size(3.5, 4.75);
+    }
+    p {
+        @include font-size(1.2, 1.9);
+    }
+}
+
+@media (max-width: 500px) {
+    h1, .huge, .alpha {
+        @include font-size(4, 4.75);
+    }
+    h2, .beta {
+        @include font-size(3.5, 4);
+    }
+    h3, .charlie {
+        @include font-size(3, 3.5);
+    }
+    h4, .delta {
+        @include font-size(2.5, 3);
+    }
+    .echo {
+        @include font-size(1.4, 1.6);
+    }
+    p {
+        @include font-size(1.2, 2.2);
+    }
+}
+
+@media (max-width: 400px) {
+    h1, .huge, .alpha {
+        @include font-size(3, 4);
+    }
+    h2, .beta {
+        @include font-size(2.75, 3.5);
+    }
+    h3, .charlie {
+        @include font-size(2.5, 3.25);
+    }
+    h4, .delta {
+        @include font-size(2.25, 3);
+    }
+}
+
+@media print {
+    h1, h2, h3, h4, h5, h6 {
+        margin: 10px 0px;
+    }
+    .huge {
+        @include font-size(10, 10);
+    }
+    h1, .alpha{
+        @include font-size(3, 5);
+    }
+    h2, .beta {
+        @include font-size(2.75, 4.25);
+    }
+    h3, .charlie {
+        @include font-size(2, 3);
+    }
+    h4, .delta {
+        @include font-size(1.9, 2.8);
+    }
+    h5, .echo {
+        @include font-size(1.75, 2.75);
+    }
+    h6, .foxtrot {
+        @include font-size(1.5, 2.5);
+    }
+
+    p, nav a, li {
+        @include font-size(1, 2);
+    }
+}
+    

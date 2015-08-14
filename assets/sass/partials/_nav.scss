@@ -1,0 +1,31 @@
+@media (min-width: 1200px)
+{
+    .navbar {
+        padding: 0px 40px;
+        .container {
+            width: 100%;
+        }
+    }
+    .navbar-header_left {
+    float: left;
+    }
+
+    .navbar-nav_right {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+
+
+.navbar-toggle {
+    border: 2px solid #ccc;
+    margin-top: 20px;
+}
+.icon-bar {
+    background-color: #ccc;
+}

@@ -1,0 +1,159 @@
+/*
+
+    SITEWIDE LAYOUT ELEMENTS
+    ========================
+
+    Top level layout elements go in here, if you're building a module or page
+    element of some sort, split it out into its own scss file and update
+    styles.scss to import it.
+
+*/
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    }
+
+ul, ol {
+    margin: 0 0 1.5em 1.5em;
+    }
+
+li {
+    > ul,
+    > ol {
+         margin-bottom:0;
+         }
+    }
+
+img,
+a img {
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    min-height: auto;
+    vertical-align: middle;
+}
+
+figure, img {
+
+}
+
+figure {
+
+    figcaption {
+
+        }
+}
+
+.splash-image {
+    background: url('../images/portrait_wide.jpg');
+    background-size: cover;
+    background-position-y: 30%; 
+}
+
+.banner-heading {
+    text-align: left;
+    .banner-text-container {
+        max-width: 600px;
+        margin: 0 auto 0;
+    }
+}
+
+.banner_home {
+    height: 750px;
+    width: 750px;
+    margin: 0;
+    color: rgba(40,40,40,0.8);
+    padding: 40px;
+    a {
+        color: #eee;
+    }
+}
+
+.content-main {
+    max-width: 750px;
+    margin: 0 auto 0;
+    padding: 40px 0px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+}
+
+article.primary-content {
+    max-width: 900px;
+    margin: 0 auto 0;
+}
+
+.primary-content_the-content {
+    max-width: 750px;
+    margin: 75px auto 0;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    .splash-image {
+        background-position-x: 15%; 
+    }
+}
+
+@media (max-width: 900px) {
+    .splash-image {
+        background-position-x: 25%; 
+    }
+}
+
+@media (max-width: 500px) {
+    .splash-image {
+        background-position-x: 35%; 
+    }
+}
+
+@media (max-width: 1400px) {
+    .banner_home {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 860px) {
+    .banner_home {
+        max-width: 400px;
+    }
+    .primary-content {
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner_home {
+        max-width: 250px;
+        padding: 30px 15px;
+    }
+    .primary-content {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .splash-image {
+        height: 100vh;
+    }
+    .banner_home {
+        height: auto;
+    }
+    p {
+        color: #333;
+    }
+    .banner-text-container {
+        a {
+            color: #555;
+        }
+    }
+}
+
+@media print {
+    .primary-content_the-content {
+        margin-top: 0;
+    }
+}
