@@ -149,6 +149,15 @@ blockquote {
     }
     h2, .beta {
         @include font-size(3.5, 4.75);
+        margin: 20px 0px;
+    }
+    h3, .charlie {
+        @include font-size(3.5, 4.75);
+        margin: 15px 0px;
+    }
+    h4, .delta {
+        @include font-size(3, 4);
+        margin: 10px 0px;
     }
     p {
         @include font-size(1.2, 1.9);
@@ -163,12 +172,12 @@ blockquote {
         @include font-size(3.5, 4);
     }
     h3, .charlie {
-        @include font-size(3, 3.5);
+        @include font-size(3.25, 3.5);
     }
     h4, .delta {
-        @include font-size(2.5, 3);
+        @include font-size(2.25, 3);
     }
-    .echo {
+    h5, .echo {
         @include font-size(1.4, 1.6);
     }
     p {
