@@ -49,7 +49,7 @@ var gulp = require('gulp');
 	
 	//Clean
 	gulp.task('clean', function() {
-	  return gulp.src(['assets/css'], {read: false})
+	  return gulp.src([''], {read: false})
 	    .pipe(clean());
 	});	
 	
