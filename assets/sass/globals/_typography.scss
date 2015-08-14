@@ -217,13 +217,13 @@ blockquote {
         @include font-size(2, 3);
     }
     h4, .delta {
-        @include font-size(1.9, 2.8);
+        @include font-size(1.75, 2.8);
     }
     h5, .echo {
-        @include font-size(1.75, 2.75);
+        @include font-size(1.5, 2.5);
     }
     h6, .foxtrot {
-        @include font-size(1.5, 2.5);
+        @include font-size(1.3, 2.2);
     }
 
     p, nav a, li {
