@@ -63,7 +63,7 @@ h6, .foxtrot {
 
 p, nav a, li {
     font-family: 'Gentium Book Basic', serif;
-    @include font-size(1.4, 2.4);
+    @include font-size(1.4, 2.1);
     margin: 15px 0px;
     color: $dark-grey;
 }

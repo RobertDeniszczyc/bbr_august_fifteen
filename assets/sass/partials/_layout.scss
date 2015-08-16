@@ -92,6 +92,10 @@ article.primary-content {
     overflow: hidden;
 }
 
+.primary-content_the-content ul li {
+    margin: 25px 0px;
+}
+
 @media (max-width: 1000px) {
     .splash-image {
         background-position-x: 15%; 
