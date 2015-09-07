@@ -38,8 +38,8 @@
 <!-- Load scripts quick smart -->
 
 <!-- Load scripts quick smart -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-	<?php wp_deregister_script('jquery');wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> id="top">
