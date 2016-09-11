@@ -1,5 +1,5 @@
 <footer role="contentinfo">
-    <p><a href="http://twitter.com/builtbyrobert">Twitter</a> - <a href="http://instagram.com/masterrobert">Instagram</a> - <a href="http://github.com/RobertDeniszczyc">GitHub</a> - <a href="https://uk.linkedin.com/pub/robert-deniszczyc/71/780/906">LinkedIn</a></p>
+    <p><a href="http://github.com/RobertDeniszczyc">GitHub</a> - <a href="https://uk.linkedin.com/pub/robert-deniszczyc/71/780/906">LinkedIn</a></p>
     <div class="copyright-info">
 	<p>
             Robert Deniszczyc &copy;<?php echo date("Y"); ?>
