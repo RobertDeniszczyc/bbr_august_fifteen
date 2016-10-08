@@ -5,7 +5,7 @@
             <div class="banner-text-container">
                 <h1 class="huge banner-name">Robert<br />Deniszczyc</h1>
                 <p>
-                    Front End Web developer from Sheffield, South Yorkshire. Graduate of Computer Information Systems BSc (Hons) from the <a href="http://lincoln.ac.uk">University of Lincoln.</a>
+                    Front End Web Developer from Sheffield, South Yorkshire. Graduate of Computer Information Systems BSc (Hons) from the <a href="http://lincoln.ac.uk">University of Lincoln.</a>
                 </p>
             </div>
         </div>
