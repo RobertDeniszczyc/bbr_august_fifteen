@@ -1,5 +1,5 @@
 <footer role="contentinfo">
-    <p><a href="http://github.com/RobertDeniszczyc">GitHub</a> - <a href="https://uk.linkedin.com/pub/robert-deniszczyc/71/780/906">LinkedIn</a></p>
+    <p><a href="https://github.com/RobertDeniszczyc">GitHub</a> - <a href="https://uk.linkedin.com/pub/robert-deniszczyc/71/780/906">LinkedIn</a></p>
     <div class="copyright-info">
 	<p>
             Robert Deniszczyc &copy;<?php echo date("Y"); ?>
@@ -11,8 +11,9 @@
 
 <!-- All other scripts -->
     <!-- Note if lt IE9 support needed, use jQuery 1.x.x, v2 doesn't support it -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php bloginfo( 'template_directory' ); ?>/assets/js/bootstrap.min.js"></script>
-    <script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo bloginfo('template_directory'); ?>/assets/scripts/jquery-2.0.3.min.js"%3E%3C/script%3E'))</script>
+
 
     <script src="<?php echo bloginfo('template_directory'); ?>/assets/scripts/general.js"></script>
 <!-- All other scripts -->

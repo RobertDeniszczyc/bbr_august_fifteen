@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.7",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "0.0.8",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.3.4",
